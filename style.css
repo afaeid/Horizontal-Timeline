@@ -39,15 +39,72 @@
 .timeline-box{
   width: 40%;
   height: 250px;
-  background: #fff;
-  position: absolute;
+  /* background: #fff; */
+  /* position: absolute; */
+  box-shadow: 1px 1.5px 2px 0px #D1D1D1,
+                   -1px -1px 2px 1px #fff;
+  border-radius: 7px;    
+  padding: 10px;
+  /* display: inline-block; */
 }
 .one{
-  left: 20px;
+  margin-left: 5%;
   top: 0;
 }
 .two{
  bottom: 0;
- right: 20px;
- position: absolute;
+ float: right;
+ margin-right: 5%;
+ 
 }
+.title span{
+  display: block;
+  transform: translateY(10px)
+}
+.one .title span{
+  text-align: right;
+}
+.two .title span{
+  text-align: left;
+}
+.title span{
+  font-size: 15px;
+}
+.one button:before{
+  position: absolute;
+  width: 1px;
+  height: 28px;
+  background:#C4C4C4 ;
+  content: "";
+  transform: rotate(90deg);
+  /* top: -20px; */
+  /* left: -42px; */
+  left: -39%;
+  z-index: -1;
+}
+.two button:before{
+  position: absolute;
+  width: 1px;
+  height: 28px;
+  background:#C4C4C4 ;
+  content: "";
+  transform: rotate(90deg);
+  /* top: -20px; */
+  /* left: -42px; */
+  right: -39%;
+  z-index: -1;
+}
+ button{
+  width: 40px;
+  height:40px;
+  border-radius: 50%;
+  border:none;
+  outline: none;
+  background: #F4F5FF;
+  border: 1px solid #C4C4C4;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10000;
+}
+
