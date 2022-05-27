@@ -32,7 +32,7 @@
 
 .timeline-cover .timeline-line{
   width: 1px;
-  height: 95%;
+  height: 99%;
   background: #CBCBCB;
   left: 50%;
   background: #BABABA;
@@ -109,4 +109,7 @@
   color: #9E9E9E;
   font-family: 'Raleway',sans-serif;
   font-size: 16px;
+}
+svg{
+  fill:var(--style-font-color2)
 }
