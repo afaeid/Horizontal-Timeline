@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;600;800&family=Raleway:wght@300;400;500;600;700;800&display=swap');
+
+
+
 :root{
   --bg-color:#F4F5FF;
   --black-color:#000000;
@@ -20,15 +24,15 @@
 }
 .timeline-cover{
   max-width: 1080px;
-  margin: 0px 20px; 
-  padding: 10px 20px;
+  margin: 0px 0px; 
+  padding: 20px 40px;
   position: relative;
  background: var(--bg-color);
 }
 
 .timeline-cover .timeline-line{
   width: 1px;
-  height: 98%;
+  height: 95%;
   background: #CBCBCB;
   left: 50%;
   background: #BABABA;
@@ -47,9 +51,10 @@
 .row section{
   background:var(--bg-color);
   width:calc(50% - 40px);
-  height: 250px;
+  min-height: 220px;
   border-radius: 5px;
   box-shadow: var(--outer-shadow);
+  padding: 30px;
 }
 .timelime-icon{
   position: absolute;
@@ -61,4 +66,47 @@
   outline: none;
   background: var(--bg-color);
   box-shadow: var(--outer-shadow)
+}
+.timeline-cover .row .timeline-time{
+  color: var(--style-font-color2);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+.timeline-cover .row1 .timeline-time{
+  text-align: right
+}
+.timeline-cover .row1 .timeline-title{
+  text-align: right
+}
+.timeline-cover .row1 .timeline-place{
+  text-align: right
+}
+.timeline-cover .row1 .timeline-description{
+  text-align: right
+}
+.timeline-cover .row2 .timeline-time, .timeline-title,
+.timeline-place, .timeline-description{
+  text-align: left
+}
+.timeline-cover .row 
+.timeline-title{
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Raleway',sans-serif;
+  color: var(--style-font-color1);
+}
+.timeline-cover .row
+.timeline-place{
+  font-family: 'Raleway',sans-serif;
+  font-style: italic;
+  color: #9E9E9E;
+  font-size: 15px;
+}
+.timeline-cover .row .timeline-description{
+  margin-top: 20px;
+  font-size: 15px;
+  color: #9E9E9E;
+  font-family: 'Raleway',sans-serif;
+  font-size: 16px;
 }
