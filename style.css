@@ -32,7 +32,7 @@
 
 .timeline-cover .timeline-line{
   width: 1px;
-  height: 99%;
+  height: calc(100% - 20px);
   background: #CBCBCB;
   left: 50%;
   background: #BABABA;
