@@ -41,6 +41,7 @@
 }
 .row{
   display: flex;
+  position: relative;
 }
 .row1{
   justify-content: flex-start;
@@ -55,17 +56,32 @@
   border-radius: 5px;
   box-shadow: var(--outer-shadow);
   padding: 30px;
-}
+  position: relative;
+  z-index: 10;
+}/*
+.row1 section::before{
+  width: 20px;
+  height: 20px;
+  content: "";
+  position: absolute;
+  background: var(--bg-color);
+  border: 1px solid #BABABA;
+  right: 0;
+  transform: rotate(45deg);
+  z-index:-1;
+}*/
 .timelime-icon{
   position: absolute;
   left: 50%;
+  top: 15px;
   transform: translateX(-50%);
   padding: 10px 12px;
   border-radius: 50%;
   border: none;
   outline: none;
-  background: var(--bg-color);
-  box-shadow: var(--outer-shadow)
+  background: var(--bg-color);/*
+  box-shadow: var(--outer-shadow)*/
+  border: 1px solid #BABABA;
 }
 .timeline-cover .row .timeline-time{
   color: var(--style-font-color2);
