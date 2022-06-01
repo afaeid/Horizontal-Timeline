@@ -2,35 +2,36 @@
 
 
 
-:root{
-  --bg-color:#F4F5FF;
-  --black-color:#000000;
-  --loading-color:#CED2FF;
-  --style-font-color1:#42445A;
+:root {
+  --bg-color: #F4F5FF;
+  --black-color: #000000;
+  --loading-color: #CED2FF;
+  --style-font-color1: #42445A;
   --style-font-color2: #F48FB1;
-  --outer-shadow:   1px 1.5px 2px 0px #D1D1D1,
-                   -1px -1px 2px 1px #fff;
-  --inner-shadow:  inset 1px 1.5px 1px 0px #D1D1D1,
-                   inset -1px -2px 1px 1px #fff;         
+  --outer-shadow: 1px 1.5px 2px 0px #D1D1D1,
+    -1px -1px 2px 1px #fff;
+  --inner-shadow: inset 1px 1.5px 1px 0px #D1D1D1,
+    inset -1px -2px 1px 1px #fff;
 }
 
 
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
-}
-.timeline-cover{
-  max-width: 1080px;
-  margin: 0px 0px; 
-  padding: 20px 40px;
-  position: relative;
- background: var(--bg-color);
+  font-family: 'Poppins', sans-serif;
 }
 
-.timeline-cover .timeline-line{
+.timeline-cover {
+  max-width: 1080px;
+  margin: 0px 0px;
+  padding: 20px 40px;
+  position: relative;
+  background: var(--bg-color);
+}
+
+.timeline-cover .timeline-line {
   width: 1px;
   height: calc(100% - 20px);
   background: #CBCBCB;
@@ -39,26 +40,32 @@
   transform: translateX(-50%);
   position: absolute;
 }
-.row{
+
+.row {
   display: flex;
   position: relative;
 }
-.row1{
+
+.row1 {
   justify-content: flex-start;
 }
-.row2{
+
+.row2 {
   justify-content: flex-end;
 }
-.row section{
-  background:var(--bg-color);
-  width:calc(50% - 40px);
+
+.row section {
+  background: var(--bg-color);
+  width: calc(50% - 40px);
   min-height: 220px;
   border-radius: 5px;
   box-shadow: var(--outer-shadow);
   padding: 30px;
   position: relative;
   z-index: 10;
-}/*
+}
+
+/*
 .row1 section::before{
   width: 20px;
   height: 20px;
@@ -70,7 +77,7 @@
   transform: rotate(45deg);
   z-index:-1;
 }*/
-.timelime-icon{
+.timelime-icon {
   position: absolute;
   left: 50%;
   top: 15px;
@@ -79,53 +86,123 @@
   border-radius: 50%;
   border: none;
   outline: none;
-  background: var(--bg-color);/*
+  background: var(--bg-color);
+  /*
   box-shadow: var(--outer-shadow)*/
   border: 1px solid #BABABA;
 }
-.timeline-cover .row .timeline-time{
+
+.timeline-cover .row .timeline-time {
   color: var(--style-font-color2);
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
 }
-.timeline-cover .row1 .timeline-time{
+
+.timeline-cover .row1 .timeline-time {
   text-align: right
 }
-.timeline-cover .row1 .timeline-title{
+
+.timeline-cover .row1 .timeline-title {
   text-align: right
 }
-.timeline-cover .row1 .timeline-place{
+
+.timeline-cover .row1 .timeline-place {
   text-align: right
 }
-.timeline-cover .row1 .timeline-description{
+
+.timeline-cover .row1 .timeline-description {
   text-align: right
 }
-.timeline-cover .row2 .timeline-time, .timeline-title,
-.timeline-place, .timeline-description{
+
+.timeline-cover .row2 .timeline-time,
+.timeline-title,
+.timeline-place,
+.timeline-description {
   text-align: left
 }
-.timeline-cover .row 
-.timeline-title{
+
+.timeline-cover .row .timeline-title {
   line-height: 50px;
   font-size: 20px;
   font-weight: 600;
-  font-family: 'Raleway',sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: var(--style-font-color1);
 }
-.timeline-cover .row
-.timeline-place{
-  font-family: 'Raleway',sans-serif;
+
+.timeline-cover .row .timeline-place {
+  font-family: 'Raleway', sans-serif;
   font-style: italic;
   color: #9E9E9E;
   font-size: 15px;
 }
-.timeline-cover .row .timeline-description{
+
+.timeline-cover .row .timeline-description {
   margin-top: 20px;
   font-size: 15px;
   color: #9E9E9E;
-  font-family: 'Raleway',sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 16px;
 }
-svg{
-  fill:var(--style-font-color2)
+
+svg {
+  fill: var(--style-font-color2)
+}
+
+
+
+
+
+
+
+@media(max-width:480px) {
+  .timeline-cover .timeline-line {
+    display: none;
+  }
+
+  .timelime-icon {
+    display: none;
+  }
+
+  .row section {
+    width: 100%;
+  }
+
+  .row1 {
+    justify-content: flex-start;
+  }
+
+  .row2 {
+    justify-content: flex-start;
+  }
+
+  .timeline-cover .row1 .timeline-time {
+    text-align: left
+  }
+
+  .timeline-cover .row1 .timeline-title {
+    text-align: left
+  }
+
+  .timeline-cover .row1 .timeline-place {
+    text-align: left
+  }
+
+  .timeline-cover .row1 .timeline-description {
+    text-align:left
+  }
+
+  .timeline-cover .row2 .timeline-time,
+  .timeline-title,
+  .timeline-place,
+  .timeline-description {
+    text-align: left
+  }
+  .row{
+    
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .timeline-cover{
+    padding: 10px 15px
+  }
 }
